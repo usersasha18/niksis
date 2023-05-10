@@ -1,0 +1,49 @@
+.section-about {
+    margin-bottom: 70px;
+}
+
+
+.section-about-wrap {
+
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+
+.about-left {
+    width: 700px;
+}
+.about-right {
+    width: 300px;
+}
+
+.section-about-bot-title {
+    font-size: 100px;
+    color: rgb(95, 43, 0);
+    font-weight: 900;
+}
+
+.section-about-bot-text {
+    color: rgb(95, 43, 0);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.section-about {
+    padding-top: 40px ;
+    padding-bottom: 40px ;
+}
+
+.section-about-text {
+    color: rgb(95, 43, 0);
+    font-size: 25px;
+    line-height:40px;
+    font-weight: 700;
+}
+
+.section-about-title {
+    color: rgb(95, 43, 0);
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+}

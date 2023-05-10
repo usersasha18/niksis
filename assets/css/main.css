@@ -1,0 +1,159 @@
+.header { 
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    background-color: white;
+}
+
+
+.header__wrapper, .logo, .nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.logo {
+    box-shadow: none;
+    gap: 20px;
+}
+
+.header__logo-link {
+    color: red;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.nav {
+    box-shadow: none;
+    gap: 20px;
+}
+.nav__link{
+    font-weight: 700;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.fz-item{
+    margin-bottom: 10px;
+   font-weight: 600;
+    font-size: 35px;
+}
+
+.nav__link::after{
+    
+
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    content: '';
+    left: 0;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    transition: .3s;
+}
+
+.nav__link:hover:after{
+
+    width: 100%;
+}
+.nav__link:hover{
+    color: red;
+}
+
+.nav__button {
+    padding: 7px 35px;
+    border: 3px solid red;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    background-color: transparent; 
+    font-weight: 700;
+    font-size: 16px;
+    transition: .3s;
+    cursor: pointer;
+}
+.contact {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__button:hover{
+    color: white;
+    background-color: red;
+}
+
+
+
+/* main */
+
+.main-section {
+    min-height: 100vh;
+    padding-top: 160px;
+    padding-bottom: 70px;
+}
+
+/* .main-section:after {
+
+    background: linear-gradient(-180deg,#ff8928,transparent 35%);
+    bottom: -100vh;
+    content: " ";
+    height: 930px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+} */
+
+.main-section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-content {
+    box-shadow: 2px 2px 20px rgb(246, 156, 0);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    width: 500px;
+    padding: 70px 60px;
+}
+
+.title {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.list-item { 
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+}
+
+.main-button {
+    padding: 15px 40px;
+    background-color: rgb(255, 63, 63);
+    border: 3px solid red;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    background-color: transparent; 
+    font-weight: 700;
+    font-size: 16px;
+    transition: .3s;
+    cursor: pointer;
+    outline: none;
+}
+
+.main-button:hover {
+    color: white;
+    background-color: red;
+}

@@ -1,0 +1,44 @@
+
+.tabsMainContainer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.tabs-wrap {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.tab {
+    cursor: pointer;
+    transition: .3s ;
+}
+
+.tab:hover {
+    color: red;
+}
+
+.tabs {
+    width: 200px;
+}
+
+.tabContent {
+    display: none;
+    width: 500px;
+}
+
+.tabs-content {
+    width: 500px;
+    
+
+}
+.tabs-content.active {
+    display: block;
+}
+
+
+.pressed {
+    color: red;
+}
