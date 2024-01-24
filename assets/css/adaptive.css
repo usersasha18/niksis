@@ -1,0 +1,10 @@
+@media only screen and (max-width: 557px ) {
+    .header__right {
+        display: none;
+    }
+
+    .header__wrapper, .logo, .nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

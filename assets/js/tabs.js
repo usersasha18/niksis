@@ -1,22 +1,24 @@
-const tabsBtn = document.querySelectorAll('.tab');
-const tabsItem = document.querySelector('.tabs-content');
+document.addEventListener('DOMContentLoaded' , function() {
+
+    const sliderButtonsContaier = document.querySelector('.sliderButtons');
+    const sliderButtons = sliderButtonsContaier.querySelectorAll('[data-id]');
 
 
-tabsBtn.forEach(function(item) {
-    item.addEventListener('click', function() {
-        let currernrBtn = item;
-        let tabID = currernrBtn.getAttribute('data-tab');
-        let currentTab = document.querySelector(tabID);
-        console.log(currentTab)
-
-        
-
-        tabsBtn.forEach(function(item){
-            item.classList.remove('pressed');
+     sliderButtons.forEach((element) =>{
+        element.addEventListener('click', (event) => {
+            
+            const sliderRow = document.querySelector('.slider-row');
+            const slides = sliderRow.querySelectorAll('.slide');
+            let data;
+            for(data of slides) {
+                if (event.target.dataset.id === data.dataset.id) {
+                    data.classList.add('active');
+                }
+                else {
+                    data.classList.remove('active');
+                }
+            }
         })
-        
-    
-        currernrBtn.classList.add('pressed');
+     });
 
-    })
-})
+});

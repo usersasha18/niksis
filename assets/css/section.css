@@ -49,7 +49,7 @@
 }
 
 .section-bot-text {
-    width: 500px;
+    width: 100%;
     font-size: 30px;
 }
 
@@ -62,12 +62,6 @@
     list-style: disc;
 }
 
-.section-bot {
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .section-right {
     padding: 20px;

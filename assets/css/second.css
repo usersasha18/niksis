@@ -1,44 +1,48 @@
-
-.tabsMainContainer {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-
-.tabs-wrap {
-    display: flex;
-    gap: 100px;
+.sliderContainer {
+    height: 650px;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 500px 600px;
+    margin: 50px 0;
 }
 
-.tab {
+
+
+
+.sliderButtons {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.sliderButtons > button {
+    margin-bottom: 3%;  
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+    background-color: white;
     cursor: pointer;
-    transition: .3s ;
+    transition: all .2s linear;
 }
 
-.tab:hover {
+button:hover {
     color: red;
 }
 
-.tabs {
-    width: 200px;
-}
-
-.tabContent {
+.slide {
     display: none;
-    width: 500px;
+}
+.slide > h1 {
+    margin-bottom: 2%;
 }
 
-.tabs-content {
-    width: 500px;
-    
-
+.slide > p {
+    font-size: 1.1rem;
 }
-.tabs-content.active {
+
+.slide.active {
     display: block;
 }
 
-
-.pressed {
+.slider-btn.red {
     color: red;
 }

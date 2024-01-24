@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./assets/css/adaptive.css">
 </head>
     <body>
         <div class="header" id="header">
@@ -23,12 +23,12 @@
                 <div class="header__left">
                     <div class="logo">
                         <img src="./assets/img/1c-1c-64d49fdd.png" alt="logo" width="70">
-                        <a  class="header__logo-link" href="/">Компания никсис</a>
+                        <a  class="header__logo-link" href="/">НИКСИС</a>
                     </div>
                 </div>
                 <div class="header__right">
                     <nav class="nav">
-                        <a class="nav__link" href="/">Главная</a>
+                        <a class="nav__link" href="index.html">Главная</a>
                         <a class="nav__link" href="second-page.html">Продукция 1С</a>
                         <button class="nav__button"> <a class="contact" href="#contact">Контакты</a></button>
                     </nav>
@@ -38,28 +38,27 @@
         <main class="main-section" style="background-image: url('./assets/img/header-bg.jpg'); ">
             <div class="container">
                 <div class="main-section-wrapper">
-                    <div class="left-side">
-                        <div class="left-content">
-                            <h1 class="title">Продажа и установка программной продукции "1С"</h1>
-                            <p class="left-list">
-                                <ul class="list">
-                                    <li class="list-item">1С: Отчетность</li>
-                                    <li class="list-item">1С: Контрагент</li>
-                                    <li class="list-item">1С: ЭДО</li>
-                                    <li class="list-item">1С: Линк</li>
-                                    <li class="list-item">1С: Облачный архив</li>
-                                    <li class="list-item">1С: Сверка</li>
-                                    <li class="list-item">1С: ДиректБанк</li>
-                                    <li class="list-item">1С: Номенклатура</li>
-                                    <li class="list-item">1С: СПАРК Риски</li>
-                                </ul>
-                            </p>
-                            <button class="main-button">Заказать 1С</button>
-                        </div>
-                    </div>
-                    <div class="right-side">
-                        <img src="./assets/img/1c-1c-64d49fdd (1).png" width="600">
-                    </div>
+                   <h1 class="header-title">
+                       Продажа и установка продукции 1С
+                   </h1>
+                        <ul class="list-header">
+                            <li>Отчетность</li>
+                            <li>|</li>
+                            <li>Контрагент</li>
+                            <li>|</li>
+                            <li>ЭДО</li>
+                            <li>|</li>
+                            <li>Линк</li>
+                            <li>|</li>
+                            <li>Облачный архив</li>
+                            <li>|</li>
+                            <li>ДиректБанк</li>
+                            <li>|</li>
+                            <li>Номенклатура</li>
+                            <li>|</li>
+                            <li>СПАРК Риски</li>
+                        </ul>
+                    <a class="header-button" href="#"><span>ЗАКАЗАТЬ 1С</span></a>
                 </div>
             </div>
         </main>
@@ -103,7 +102,17 @@
                             Предоставляем полный спектр услуг по автоматизации управления и учета на предприятиях:
                         </p>
                     </div>
-                    <div class="section-right">
+                    <a class="header-button" id="section-button" href="#"><span>ПОДРОБНЕЕ</span></a>
+                    <div class="section-right hidden-pull">
+                        <div class="hidden-pull-content">
+                            <h2 class="section-bot-title">
+                                О нас
+                            </h2>
+                            <p class="section-bot-text">
+                                Мы занимаемся автоматизацией управления и учета на базе программных продуктов «1С».
+                                Предоставляем полный спектр услуг по автоматизации управления и учета на предприятиях:
+                            </p>
+                        </div>
                         <ul class="section-list">
                             <li class="section-list-item">консультации на этапе подбора программного продукта и его демонстрация;</li>
                             <li class="section-list-item">поставка программного обеспечения;</li>
@@ -185,6 +194,7 @@
                 </div>
             </div>
         </footer>
+        <script src="./assets/js/modal.js"></script>
         <script src="./assets/js/index.js"></script>
     </body>
 </html>
